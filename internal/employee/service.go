@@ -18,12 +18,20 @@ func NewService(repo EmployeeRepository) *Service {
 	return &Service{repo: repo}
 }
 
+var validTypes = map[string]bool{"fulltime": true, "contractor": true}
+
 func (s *Service) Create(emp Employee) (Employee, error) {
 	if emp.Name == "" {
 		return Employee{}, errors.New("name cannot be empty")
 	}
+	if emp.Position == "" {
+		return Employee{}, errors.New("position cannot be empty")
+	}
 	if emp.Salary <= 0 {
 		return Employee{}, errors.New("salary must be greater than zero")
+	}
+	if !validTypes[emp.Type] {
+		return Employee{}, errors.New("type must be 'fulltime' or 'contractor'")
 	}
 	return s.repo.Create(emp)
 }
@@ -50,8 +58,14 @@ func (s *Service) Update(emp Employee) (Employee, error) {
 	if emp.Name == "" {
 		return Employee{}, errors.New("name cannot be empty")
 	}
+	if emp.Position == "" {
+		return Employee{}, errors.New("position cannot be empty")
+	}
 	if emp.Salary <= 0 {
 		return Employee{}, errors.New("salary must be greater than zero")
+	}
+	if !validTypes[emp.Type] {
+		return Employee{}, errors.New("type must be 'fulltime' or 'contractor'")
 	}
 	return s.repo.Update(emp)
 }

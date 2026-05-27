@@ -2,6 +2,7 @@ package employee
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 	"strconv"
 
@@ -39,7 +40,6 @@ func (h *Handler) Create(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) GetByID(w http.ResponseWriter, r *http.Request) {
-
 	vars := mux.Vars(r)
 	id, err := strconv.ParseInt(vars["id"], 10, 64)
 	if err != nil {
@@ -48,8 +48,12 @@ func (h *Handler) GetByID(w http.ResponseWriter, r *http.Request) {
 	}
 
 	emp, err := h.service.GetByID(id)
+	if errors.Is(err, ErrNotFound) {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
 	if err != nil {
-		http.Error(w, "invalid id", http.StatusBadRequest)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -58,7 +62,6 @@ func (h *Handler) GetByID(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) Update(w http.ResponseWriter, r *http.Request) {
-
 	vars := mux.Vars(r)
 	id, err := strconv.ParseInt(vars["id"], 10, 64)
 	if err != nil {
@@ -75,16 +78,20 @@ func (h *Handler) Update(w http.ResponseWriter, r *http.Request) {
 
 	emp.ID = id
 	updated, err := h.service.Update(emp)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusNotFound) // ← err.Error() não "invalid body"
+	if errors.Is(err, ErrNotFound) {
+		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(updated)
 }
 
 func (h *Handler) Delete(w http.ResponseWriter, r *http.Request) {
-
 	vars := mux.Vars(r)
 	id, err := strconv.ParseInt(vars["id"], 10, 64)
 	if err != nil {
@@ -93,12 +100,16 @@ func (h *Handler) Delete(w http.ResponseWriter, r *http.Request) {
 	}
 
 	err = h.service.Delete(id)
+	if errors.Is(err, ErrNotFound) {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
+	w.WriteHeader(http.StatusNoContent)
 }
 
 func (h *Handler) GetAll(w http.ResponseWriter, r *http.Request) {

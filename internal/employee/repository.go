@@ -2,6 +2,7 @@ package employee
 
 import (
 	"database/sql"
+	"errors"
 	"fmt"
 )
 
@@ -38,7 +39,7 @@ func (r *Repository) GetAll() ([]Employee, error) {
 	}
 	defer rows.Close()
 
-	var employees []Employee
+	employees := []Employee{}
 	for rows.Next() {
 		var emp Employee
 		err := rows.Scan(&emp.ID, &emp.Name, &emp.Position, &emp.Salary, &emp.Type)
@@ -56,6 +57,9 @@ func (r *Repository) GetByID(id int64) (Employee, error) {
 	err := r.db.QueryRow(
 		"SELECT id, name, position, salary, type FROM employees WHERE id = ?", id,
 	).Scan(&emp.ID, &emp.Name, &emp.Position, &emp.Salary, &emp.Type)
+	if errors.Is(err, sql.ErrNoRows) {
+		return Employee{}, ErrNotFound
+	}
 	if err != nil {
 		return Employee{}, err
 	}

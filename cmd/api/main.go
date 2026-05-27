@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -12,7 +13,12 @@ import (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "jorge:jorge123@tcp(localhost:3306)/employees_db")
+	dsn := os.Getenv("DATABASE_DSN")
+	if dsn == "" {
+		log.Fatal("DATABASE_DSN environment variable is required")
+	}
+
+	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -48,7 +54,7 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/employees", handler.Create).Methods("POST")
 	router.HandleFunc("/employees", handler.GetAll).Methods("GET")
-	router.HandleFunc("/employees/report", handler.GetReport).Methods("GET") // ← antes do {id}
+	router.HandleFunc("/employees/report", handler.GetReport).Methods("GET")
 	router.HandleFunc("/employees/{id}", handler.GetByID).Methods("GET")
 	router.HandleFunc("/employees/{id}", handler.Update).Methods("PUT")
 	router.HandleFunc("/employees/{id}", handler.Delete).Methods("DELETE")
