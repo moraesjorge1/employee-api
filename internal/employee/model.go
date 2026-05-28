@@ -12,6 +12,13 @@ type Employee struct {
 	Type     string  `json:"type"` // "fulltime" ou "contractor"
 }
 
+type ReportFilter struct {
+	Type      string
+	Position  string
+	MinSalary float64
+	MaxSalary float64
+}
+
 type Reporting struct {
 	TotalEmployees int            `json:"total_employees"`
 	TotalSalary    float64        `json:"total_salary"`

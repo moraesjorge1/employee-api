@@ -5,6 +5,7 @@ import "errors"
 type EmployeeRepository interface {
 	Create(emp Employee) (Employee, error)
 	GetAll() ([]Employee, error)
+	GetFiltered(filter ReportFilter) ([]Employee, error)
 	GetByID(id int64) (Employee, error)
 	Update(emp Employee) (Employee, error)
 	Delete(id int64) error
@@ -77,9 +78,8 @@ func (s *Service) Delete(id int64) error {
 	return s.repo.Delete(id)
 }
 
-func (s *Service) GenerateReport() (Reporting, error) {
-
-	employees, err := s.repo.GetAll()
+func (s *Service) GenerateReport(filter ReportFilter) (Reporting, error) {
+	employees, err := s.repo.GetFiltered(filter)
 	if err != nil {
 		return Reporting{}, err
 	}

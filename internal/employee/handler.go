@@ -9,6 +9,11 @@ import (
 	"github.com/gorilla/mux"
 )
 
+func parseFloat(s string) float64 {
+	v, _ := strconv.ParseFloat(s, 64)
+	return v
+}
+
 type Handler struct {
 	service *Service
 }
@@ -126,12 +131,20 @@ func (h *Handler) GetAll(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) GetReport(w http.ResponseWriter, r *http.Request) {
-	emps, err := h.service.GenerateReport()
+	q := r.URL.Query()
+	filter := ReportFilter{
+		Type:      q.Get("type"),
+		Position:  q.Get("position"),
+		MinSalary: parseFloat(q.Get("min_salary")),
+		MaxSalary: parseFloat(q.Get("max_salary")),
+	}
+
+	report, err := h.service.GenerateReport(filter)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(emps)
+	json.NewEncoder(w).Encode(report)
 }

@@ -52,6 +52,44 @@ func (r *Repository) GetAll() ([]Employee, error) {
 	return employees, nil
 }
 
+func (r *Repository) GetFiltered(f ReportFilter) ([]Employee, error) {
+	query := "SELECT id, name, position, salary, type FROM employees WHERE 1=1"
+	args := []interface{}{}
+
+	if f.Type != "" {
+		query += " AND type = ?"
+		args = append(args, f.Type)
+	}
+	if f.Position != "" {
+		query += " AND position = ?"
+		args = append(args, f.Position)
+	}
+	if f.MinSalary > 0 {
+		query += " AND salary >= ?"
+		args = append(args, f.MinSalary)
+	}
+	if f.MaxSalary > 0 {
+		query += " AND salary <= ?"
+		args = append(args, f.MaxSalary)
+	}
+
+	rows, err := r.db.Query(query, args...)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	employees := []Employee{}
+	for rows.Next() {
+		var emp Employee
+		if err := rows.Scan(&emp.ID, &emp.Name, &emp.Position, &emp.Salary, &emp.Type); err != nil {
+			return nil, err
+		}
+		employees = append(employees, emp)
+	}
+	return employees, nil
+}
+
 func (r *Repository) GetByID(id int64) (Employee, error) {
 	var emp Employee
 	err := r.db.QueryRow(
