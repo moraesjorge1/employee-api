@@ -3,7 +3,6 @@ package employee
 import (
 	"database/sql"
 	"errors"
-	"fmt"
 )
 
 type Repository struct {
@@ -48,6 +47,9 @@ func (r *Repository) GetAll() ([]Employee, error) {
 		}
 		employees = append(employees, emp)
 	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
 
 	return employees, nil
 }
@@ -87,6 +89,9 @@ func (r *Repository) GetFiltered(f ReportFilter) ([]Employee, error) {
 		}
 		employees = append(employees, emp)
 	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
 	return employees, nil
 }
 
@@ -120,7 +125,7 @@ func (r *Repository) Update(emp Employee) (Employee, error) {
 		return Employee{}, err
 	}
 	if rows == 0 {
-		return Employee{}, fmt.Errorf("employee with id %d not found", emp.ID)
+		return Employee{}, ErrNotFound
 	}
 
 	return emp, nil
@@ -137,7 +142,7 @@ func (r *Repository) Delete(id int64) error {
 		return err
 	}
 	if rows == 0 {
-		return fmt.Errorf("employee with id %d not found", id)
+		return ErrNotFound
 	}
 
 	return nil
