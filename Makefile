@@ -1,4 +1,4 @@
-DSN=root:root@tcp(localhost:3306)/employee_db?parseTime=true
+DSN=employee:employee@tcp(localhost:3306)/employee_db?parseTime=true
 
 .PHONY: dev dev-local infra down setup-mac
 
