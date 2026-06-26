@@ -17,8 +17,10 @@ down:
 dev-local:
 	-pkill -f "temporal server" 2>/dev/null; true
 	-pkill -f "cmd/api" 2>/dev/null; true
-	temporal server start-dev &
-	sleep 3
+	temporal server start-dev & \
+	echo "Aguardando Temporal..." && \
+	until nc -z localhost 7233 2>/dev/null; do sleep 1; done && \
+	echo "Temporal pronto!" && \
 	DATABASE_DSN="$(DSN)" go run ./cmd/api & \
 	DATABASE_DSN="$(DSN)" go run ./cmd/worker
 
