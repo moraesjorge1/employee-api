@@ -2,6 +2,8 @@ package report
 
 import (
 	"encoding/json"
+	"errors"
+	"fmt"
 	"net/http"
 	"strconv"
 
@@ -39,6 +41,37 @@ func (h *Handler) StartReport(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusAccepted)
 	json.NewEncoder(w).Encode(map[string]string{"report_id": reportID})
+}
+
+func (h *Handler) GetStatus(w http.ResponseWriter, r *http.Request) {
+	reportID := mux.Vars(r)["report_id"]
+
+	status, err := h.svc.GetStatus(r.Context(), reportID)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(StatusResponse{ReportID: reportID, Status: status})
+}
+
+func (h *Handler) Download(w http.ResponseWriter, r *http.Request) {
+	reportID := mux.Vars(r)["report_id"]
+
+	data, err := h.svc.DownloadReport(reportID)
+	if errors.Is(err, ErrReportNotFound) {
+		http.Error(w, "report not ready or does not exist", http.StatusNotFound)
+		return
+	}
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Disposition", fmt.Sprintf(`attachment; filename="report-%s.json"`, reportID))
+	w.Write(data)
 }
 
 func (h *Handler) GetReport(w http.ResponseWriter, r *http.Request) {

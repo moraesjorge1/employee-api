@@ -1,0 +1,1432 @@
+{
+  "total_employees": 203,
+  "total_salary": 1634760,
+  "average_salary": 8053.004926108374,
+  "by_type": {
+    "contractor": 101,
+    "fulltime": 102
+  },
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ana Souza",
+      "position": "Engineer",
+      "salary": 8500,
+      "type": "fulltime"
+    },
+    {
+      "id": 2,
+      "name": "Bruno Lima",
+      "position": "Designer",
+      "salary": 5200,
+      "type": "contractor"
+    },
+    {
+      "id": 3,
+      "name": "Carla Mendes",
+      "position": "Engineer",
+      "salary": 9100,
+      "type": "fulltime"
+    },
+    {
+      "id": 4,
+      "name": "Pedro Nunes",
+      "position": "DevOps",
+      "salary": 6090,
+      "type": "fulltime"
+    },
+    {
+      "id": 5,
+      "name": "Olivia Barbosa",
+      "position": "Data Scientist",
+      "salary": 6738,
+      "type": "fulltime"
+    },
+    {
+      "id": 6,
+      "name": "Nicolas Dias",
+      "position": "Engineer",
+      "salary": 14076,
+      "type": "fulltime"
+    },
+    {
+      "id": 7,
+      "name": "Hugo Santos",
+      "position": "Tech Lead",
+      "salary": 13648,
+      "type": "contractor"
+    },
+    {
+      "id": 8,
+      "name": "Isabela Moreira",
+      "position": "Architect",
+      "salary": 7663,
+      "type": "contractor"
+    },
+    {
+      "id": 9,
+      "name": "Mariana Lima",
+      "position": "Analyst",
+      "salary": 7522,
+      "type": "fulltime"
+    },
+    {
+      "id": 10,
+      "name": "Sofia Ferreira",
+      "position": "Product Manager",
+      "salary": 8926,
+      "type": "fulltime"
+    },
+    {
+      "id": 11,
+      "name": "Quintana Pereira",
+      "position": "DevOps",
+      "salary": 4189,
+      "type": "contractor"
+    },
+    {
+      "id": 12,
+      "name": "Lucas Rodrigues",
+      "position": "Analyst",
+      "salary": 12972,
+      "type": "contractor"
+    },
+    {
+      "id": 13,
+      "name": "Nicolas Gomes",
+      "position": "Designer",
+      "salary": 11681,
+      "type": "contractor"
+    },
+    {
+      "id": 14,
+      "name": "João Oliveira",
+      "position": "Architect",
+      "salary": 6240,
+      "type": "fulltime"
+    },
+    {
+      "id": 15,
+      "name": "Carla Costa",
+      "position": "Tech Lead",
+      "salary": 11494,
+      "type": "contractor"
+    },
+    {
+      "id": 16,
+      "name": "João Costa",
+      "position": "Data Scientist",
+      "salary": 6936,
+      "type": "contractor"
+    },
+    {
+      "id": 17,
+      "name": "Isabela Costa",
+      "position": "Product Manager",
+      "salary": 7272,
+      "type": "fulltime"
+    },
+    {
+      "id": 18,
+      "name": "Pedro Souza",
+      "position": "Architect",
+      "salary": 12523,
+      "type": "contractor"
+    },
+    {
+      "id": 19,
+      "name": "Pedro Barbosa",
+      "position": "Designer",
+      "salary": 5655,
+      "type": "contractor"
+    },
+    {
+      "id": 20,
+      "name": "Diego Carvalho",
+      "position": "QA",
+      "salary": 5011,
+      "type": "contractor"
+    },
+    {
+      "id": 21,
+      "name": "Elena Nunes",
+      "position": "Analyst",
+      "salary": 4293,
+      "type": "contractor"
+    },
+    {
+      "id": 22,
+      "name": "João Barbosa",
+      "position": "Designer",
+      "salary": 11503,
+      "type": "fulltime"
+    },
+    {
+      "id": 23,
+      "name": "João Nascimento",
+      "position": "DevOps",
+      "salary": 5910,
+      "type": "contractor"
+    },
+    {
+      "id": 24,
+      "name": "Quintana Gomes",
+      "position": "DevOps",
+      "salary": 9284,
+      "type": "contractor"
+    },
+    {
+      "id": 25,
+      "name": "Sofia Andrade",
+      "position": "Tech Lead",
+      "salary": 11690,
+      "type": "contractor"
+    },
+    {
+      "id": 26,
+      "name": "Carla Barbosa",
+      "position": "Manager",
+      "salary": 5650,
+      "type": "contractor"
+    },
+    {
+      "id": 27,
+      "name": "Lucas Pereira",
+      "position": "Architect",
+      "salary": 11598,
+      "type": "contractor"
+    },
+    {
+      "id": 28,
+      "name": "Carla Ferreira",
+      "position": "Manager",
+      "salary": 8551,
+      "type": "fulltime"
+    },
+    {
+      "id": 29,
+      "name": "Nicolas Moreira",
+      "position": "Data Scientist",
+      "salary": 7380,
+      "type": "contractor"
+    },
+    {
+      "id": 30,
+      "name": "Rafael Nascimento",
+      "position": "Engineer",
+      "salary": 7771,
+      "type": "contractor"
+    },
+    {
+      "id": 31,
+      "name": "Gabriela Oliveira",
+      "position": "QA",
+      "salary": 3720,
+      "type": "fulltime"
+    },
+    {
+      "id": 32,
+      "name": "Gabriela Rodrigues",
+      "position": "Data Scientist",
+      "salary": 5347,
+      "type": "contractor"
+    },
+    {
+      "id": 33,
+      "name": "Karen Rodrigues",
+      "position": "DevOps",
+      "salary": 5732,
+      "type": "fulltime"
+    },
+    {
+      "id": 34,
+      "name": "Gabriela Gomes",
+      "position": "Designer",
+      "salary": 3153,
+      "type": "contractor"
+    },
+    {
+      "id": 35,
+      "name": "Pedro Andrade",
+      "position": "Engineer",
+      "salary": 5225,
+      "type": "fulltime"
+    },
+    {
+      "id": 36,
+      "name": "Gabriela Lima",
+      "position": "DevOps",
+      "salary": 9339,
+      "type": "fulltime"
+    },
+    {
+      "id": 37,
+      "name": "Rafael Moreira",
+      "position": "Product Manager",
+      "salary": 8242,
+      "type": "fulltime"
+    },
+    {
+      "id": 38,
+      "name": "Ana Carvalho",
+      "position": "Designer",
+      "salary": 4951,
+      "type": "contractor"
+    },
+    {
+      "id": 39,
+      "name": "Pedro Carvalho",
+      "position": "Engineer",
+      "salary": 13745,
+      "type": "contractor"
+    },
+    {
+      "id": 40,
+      "name": "Nicolas Gomes",
+      "position": "Architect",
+      "salary": 10000,
+      "type": "fulltime"
+    },
+    {
+      "id": 41,
+      "name": "Lucas Martins",
+      "position": "Tech Lead",
+      "salary": 13629,
+      "type": "fulltime"
+    },
+    {
+      "id": 42,
+      "name": "Rafael Souza",
+      "position": "DevOps",
+      "salary": 4313,
+      "type": "contractor"
+    },
+    {
+      "id": 43,
+      "name": "Isabela Andrade",
+      "position": "QA",
+      "salary": 8177,
+      "type": "contractor"
+    },
+    {
+      "id": 44,
+      "name": "Sofia Alves",
+      "position": "QA",
+      "salary": 10230,
+      "type": "fulltime"
+    },
+    {
+      "id": 45,
+      "name": "Bruno Ferreira",
+      "position": "Architect",
+      "salary": 5193,
+      "type": "contractor"
+    },
+    {
+      "id": 46,
+      "name": "Karen Lima",
+      "position": "Data Scientist",
+      "salary": 11044,
+      "type": "contractor"
+    },
+    {
+      "id": 47,
+      "name": "Ana Moreira",
+      "position": "Designer",
+      "salary": 9881,
+      "type": "contractor"
+    },
+    {
+      "id": 48,
+      "name": "Bruno Santos",
+      "position": "Data Scientist",
+      "salary": 14682,
+      "type": "contractor"
+    },
+    {
+      "id": 49,
+      "name": "Bruno Rodrigues",
+      "position": "Designer",
+      "salary": 13286,
+      "type": "contractor"
+    },
+    {
+      "id": 50,
+      "name": "Thiago Lima",
+      "position": "Architect",
+      "salary": 6423,
+      "type": "fulltime"
+    },
+    {
+      "id": 51,
+      "name": "Bruno Andrade",
+      "position": "Data Scientist",
+      "salary": 10168,
+      "type": "fulltime"
+    },
+    {
+      "id": 52,
+      "name": "Hugo Dias",
+      "position": "Engineer",
+      "salary": 6035,
+      "type": "contractor"
+    },
+    {
+      "id": 53,
+      "name": "Felipe Carvalho",
+      "position": "Manager",
+      "salary": 8163,
+      "type": "fulltime"
+    },
+    {
+      "id": 54,
+      "name": "Hugo Rocha",
+      "position": "Product Manager",
+      "salary": 12783,
+      "type": "fulltime"
+    },
+    {
+      "id": 55,
+      "name": "Gabriela Pereira",
+      "position": "QA",
+      "salary": 3336,
+      "type": "contractor"
+    },
+    {
+      "id": 56,
+      "name": "João Carvalho",
+      "position": "Data Scientist",
+      "salary": 3026,
+      "type": "fulltime"
+    },
+    {
+      "id": 57,
+      "name": "Olivia Santos",
+      "position": "Data Scientist",
+      "salary": 8337,
+      "type": "contractor"
+    },
+    {
+      "id": 58,
+      "name": "Quintana Rocha",
+      "position": "Product Manager",
+      "salary": 7505,
+      "type": "fulltime"
+    },
+    {
+      "id": 59,
+      "name": "Karen Carvalho",
+      "position": "Product Manager",
+      "salary": 4481,
+      "type": "contractor"
+    },
+    {
+      "id": 60,
+      "name": "Isabela Lima",
+      "position": "QA",
+      "salary": 3315,
+      "type": "contractor"
+    },
+    {
+      "id": 61,
+      "name": "Mariana Rocha",
+      "position": "Product Manager",
+      "salary": 4492,
+      "type": "contractor"
+    },
+    {
+      "id": 62,
+      "name": "Diego Costa",
+      "position": "DevOps",
+      "salary": 5461,
+      "type": "fulltime"
+    },
+    {
+      "id": 63,
+      "name": "Rafael Gomes",
+      "position": "Manager",
+      "salary": 5855,
+      "type": "fulltime"
+    },
+    {
+      "id": 64,
+      "name": "Nicolas Ferreira",
+      "position": "Data Scientist",
+      "salary": 14003,
+      "type": "contractor"
+    },
+    {
+      "id": 65,
+      "name": "Thiago Alves",
+      "position": "Designer",
+      "salary": 6509,
+      "type": "contractor"
+    },
+    {
+      "id": 66,
+      "name": "Pedro Rocha",
+      "position": "Tech Lead",
+      "salary": 6892,
+      "type": "contractor"
+    },
+    {
+      "id": 67,
+      "name": "João Silva",
+      "position": "Manager",
+      "salary": 5642,
+      "type": "fulltime"
+    },
+    {
+      "id": 68,
+      "name": "Isabela Souza",
+      "position": "Manager",
+      "salary": 14161,
+      "type": "fulltime"
+    },
+    {
+      "id": 69,
+      "name": "Gabriela Carvalho",
+      "position": "DevOps",
+      "salary": 4841,
+      "type": "contractor"
+    },
+    {
+      "id": 70,
+      "name": "Gabriela Santos",
+      "position": "QA",
+      "salary": 8234,
+      "type": "fulltime"
+    },
+    {
+      "id": 71,
+      "name": "Elena Costa",
+      "position": "DevOps",
+      "salary": 5719,
+      "type": "contractor"
+    },
+    {
+      "id": 72,
+      "name": "Thiago Ferreira",
+      "position": "Data Scientist",
+      "salary": 3844,
+      "type": "contractor"
+    },
+    {
+      "id": 73,
+      "name": "Elena Dias",
+      "position": "QA",
+      "salary": 5912,
+      "type": "contractor"
+    },
+    {
+      "id": 74,
+      "name": "Isabela Silva",
+      "position": "Tech Lead",
+      "salary": 4668,
+      "type": "fulltime"
+    },
+    {
+      "id": 75,
+      "name": "Quintana Gomes",
+      "position": "Engineer",
+      "salary": 3765,
+      "type": "contractor"
+    },
+    {
+      "id": 76,
+      "name": "Diego Dias",
+      "position": "Product Manager",
+      "salary": 4144,
+      "type": "fulltime"
+    },
+    {
+      "id": 77,
+      "name": "João Souza",
+      "position": "Product Manager",
+      "salary": 14630,
+      "type": "fulltime"
+    },
+    {
+      "id": 78,
+      "name": "Mariana Ferreira",
+      "position": "Analyst",
+      "salary": 6434,
+      "type": "contractor"
+    },
+    {
+      "id": 79,
+      "name": "João Andrade",
+      "position": "Data Scientist",
+      "salary": 3985,
+      "type": "contractor"
+    },
+    {
+      "id": 80,
+      "name": "Ana Oliveira",
+      "position": "Engineer",
+      "salary": 4379,
+      "type": "contractor"
+    },
+    {
+      "id": 81,
+      "name": "Lucas Dias",
+      "position": "DevOps",
+      "salary": 3419,
+      "type": "contractor"
+    },
+    {
+      "id": 82,
+      "name": "Rafael Carvalho",
+      "position": "Manager",
+      "salary": 6171,
+      "type": "fulltime"
+    },
+    {
+      "id": 83,
+      "name": "Thiago Rocha",
+      "position": "Architect",
+      "salary": 9696,
+      "type": "fulltime"
+    },
+    {
+      "id": 84,
+      "name": "Pedro Pereira",
+      "position": "Tech Lead",
+      "salary": 11937,
+      "type": "contractor"
+    },
+    {
+      "id": 85,
+      "name": "Elena Ferreira",
+      "position": "Architect",
+      "salary": 4437,
+      "type": "contractor"
+    },
+    {
+      "id": 86,
+      "name": "Hugo Lima",
+      "position": "Engineer",
+      "salary": 12229,
+      "type": "contractor"
+    },
+    {
+      "id": 87,
+      "name": "Rafael Nunes",
+      "position": "Analyst",
+      "salary": 9638,
+      "type": "contractor"
+    },
+    {
+      "id": 88,
+      "name": "Ana Pereira",
+      "position": "Product Manager",
+      "salary": 9588,
+      "type": "fulltime"
+    },
+    {
+      "id": 89,
+      "name": "Felipe Lima",
+      "position": "Analyst",
+      "salary": 14471,
+      "type": "contractor"
+    },
+    {
+      "id": 90,
+      "name": "Isabela Nunes",
+      "position": "Data Scientist",
+      "salary": 3541,
+      "type": "contractor"
+    },
+    {
+      "id": 91,
+      "name": "Nicolas Rocha",
+      "position": "DevOps",
+      "salary": 7632,
+      "type": "contractor"
+    },
+    {
+      "id": 92,
+      "name": "Hugo Barbosa",
+      "position": "QA",
+      "salary": 4005,
+      "type": "contractor"
+    },
+    {
+      "id": 93,
+      "name": "Bruno Silva",
+      "position": "Designer",
+      "salary": 11187,
+      "type": "contractor"
+    },
+    {
+      "id": 94,
+      "name": "Karen Souza",
+      "position": "DevOps",
+      "salary": 4514,
+      "type": "contractor"
+    },
+    {
+      "id": 95,
+      "name": "Thiago Moreira",
+      "position": "QA",
+      "salary": 7025,
+      "type": "contractor"
+    },
+    {
+      "id": 96,
+      "name": "Elena Rodrigues",
+      "position": "Tech Lead",
+      "salary": 7309,
+      "type": "contractor"
+    },
+    {
+      "id": 97,
+      "name": "Mariana Silva",
+      "position": "QA",
+      "salary": 5380,
+      "type": "fulltime"
+    },
+    {
+      "id": 98,
+      "name": "Felipe Rodrigues",
+      "position": "DevOps",
+      "salary": 11070,
+      "type": "contractor"
+    },
+    {
+      "id": 99,
+      "name": "Hugo Rodrigues",
+      "position": "Manager",
+      "salary": 3586,
+      "type": "fulltime"
+    },
+    {
+      "id": 100,
+      "name": "Elena Nunes",
+      "position": "Data Scientist",
+      "salary": 9393,
+      "type": "contractor"
+    },
+    {
+      "id": 101,
+      "name": "Sofia Rodrigues",
+      "position": "Analyst",
+      "salary": 10571,
+      "type": "contractor"
+    },
+    {
+      "id": 102,
+      "name": "Carla Costa",
+      "position": "Manager",
+      "salary": 12210,
+      "type": "fulltime"
+    },
+    {
+      "id": 103,
+      "name": "Mariana Pereira",
+      "position": "Tech Lead",
+      "salary": 12020,
+      "type": "contractor"
+    },
+    {
+      "id": 104,
+      "name": "Quintana Lima",
+      "position": "Analyst",
+      "salary": 3444,
+      "type": "contractor"
+    },
+    {
+      "id": 105,
+      "name": "Carla Oliveira",
+      "position": "Tech Lead",
+      "salary": 7148,
+      "type": "fulltime"
+    },
+    {
+      "id": 106,
+      "name": "Lucas Oliveira",
+      "position": "Architect",
+      "salary": 11069,
+      "type": "fulltime"
+    },
+    {
+      "id": 107,
+      "name": "Diego Rodrigues",
+      "position": "QA",
+      "salary": 6171,
+      "type": "fulltime"
+    },
+    {
+      "id": 108,
+      "name": "Lucas Alves",
+      "position": "Analyst",
+      "salary": 12924,
+      "type": "contractor"
+    },
+    {
+      "id": 109,
+      "name": "Gabriela Moreira",
+      "position": "Manager",
+      "salary": 6642,
+      "type": "fulltime"
+    },
+    {
+      "id": 110,
+      "name": "João Andrade",
+      "position": "Manager",
+      "salary": 13521,
+      "type": "contractor"
+    },
+    {
+      "id": 111,
+      "name": "Carla Rocha",
+      "position": "Designer",
+      "salary": 9179,
+      "type": "contractor"
+    },
+    {
+      "id": 112,
+      "name": "Pedro Moreira",
+      "position": "Data Scientist",
+      "salary": 9863,
+      "type": "contractor"
+    },
+    {
+      "id": 113,
+      "name": "Bruno Rocha",
+      "position": "DevOps",
+      "salary": 10019,
+      "type": "fulltime"
+    },
+    {
+      "id": 114,
+      "name": "Quintana Costa",
+      "position": "Architect",
+      "salary": 4167,
+      "type": "fulltime"
+    },
+    {
+      "id": 115,
+      "name": "Olivia Ferreira",
+      "position": "Architect",
+      "salary": 4342,
+      "type": "fulltime"
+    },
+    {
+      "id": 116,
+      "name": "Mariana Moreira",
+      "position": "Product Manager",
+      "salary": 3509,
+      "type": "fulltime"
+    },
+    {
+      "id": 117,
+      "name": "Mariana Ferreira",
+      "position": "Designer",
+      "salary": 9595,
+      "type": "contractor"
+    },
+    {
+      "id": 118,
+      "name": "Mariana Andrade",
+      "position": "Engineer",
+      "salary": 9645,
+      "type": "contractor"
+    },
+    {
+      "id": 119,
+      "name": "Karen Andrade",
+      "position": "Analyst",
+      "salary": 7824,
+      "type": "fulltime"
+    },
+    {
+      "id": 120,
+      "name": "Pedro Souza",
+      "position": "QA",
+      "salary": 7924,
+      "type": "contractor"
+    },
+    {
+      "id": 121,
+      "name": "Nicolas Dias",
+      "position": "Tech Lead",
+      "salary": 6683,
+      "type": "contractor"
+    },
+    {
+      "id": 122,
+      "name": "Gabriela Lima",
+      "position": "QA",
+      "salary": 6893,
+      "type": "fulltime"
+    },
+    {
+      "id": 123,
+      "name": "Felipe Pereira",
+      "position": "Architect",
+      "salary": 7724,
+      "type": "fulltime"
+    },
+    {
+      "id": 124,
+      "name": "Felipe Oliveira",
+      "position": "Engineer",
+      "salary": 3508,
+      "type": "contractor"
+    },
+    {
+      "id": 125,
+      "name": "Thiago Pereira",
+      "position": "Manager",
+      "salary": 8732,
+      "type": "contractor"
+    },
+    {
+      "id": 126,
+      "name": "Quintana Andrade",
+      "position": "Engineer",
+      "salary": 12226,
+      "type": "contractor"
+    },
+    {
+      "id": 127,
+      "name": "Carla Ferreira",
+      "position": "Tech Lead",
+      "salary": 6094,
+      "type": "fulltime"
+    },
+    {
+      "id": 128,
+      "name": "Lucas Nascimento",
+      "position": "Manager",
+      "salary": 7135,
+      "type": "fulltime"
+    },
+    {
+      "id": 129,
+      "name": "João Dias",
+      "position": "Engineer",
+      "salary": 9818,
+      "type": "contractor"
+    },
+    {
+      "id": 130,
+      "name": "Thiago Silva",
+      "position": "Product Manager",
+      "salary": 11056,
+      "type": "fulltime"
+    },
+    {
+      "id": 131,
+      "name": "Isabela Barbosa",
+      "position": "Designer",
+      "salary": 6203,
+      "type": "fulltime"
+    },
+    {
+      "id": 132,
+      "name": "João Ferreira",
+      "position": "Product Manager",
+      "salary": 6859,
+      "type": "fulltime"
+    },
+    {
+      "id": 133,
+      "name": "Ana Dias",
+      "position": "Manager",
+      "salary": 5086,
+      "type": "contractor"
+    },
+    {
+      "id": 134,
+      "name": "Elena Dias",
+      "position": "QA",
+      "salary": 11108,
+      "type": "fulltime"
+    },
+    {
+      "id": 135,
+      "name": "Nicolas Carvalho",
+      "position": "DevOps",
+      "salary": 12691,
+      "type": "contractor"
+    },
+    {
+      "id": 136,
+      "name": "Hugo Santos",
+      "position": "Engineer",
+      "salary": 3712,
+      "type": "contractor"
+    },
+    {
+      "id": 137,
+      "name": "Hugo Andrade",
+      "position": "QA",
+      "salary": 5062,
+      "type": "fulltime"
+    },
+    {
+      "id": 138,
+      "name": "Thiago Ferreira",
+      "position": "Architect",
+      "salary": 8328,
+      "type": "fulltime"
+    },
+    {
+      "id": 139,
+      "name": "Thiago Barbosa",
+      "position": "DevOps",
+      "salary": 5520,
+      "type": "contractor"
+    },
+    {
+      "id": 140,
+      "name": "Pedro Pereira",
+      "position": "Designer",
+      "salary": 6508,
+      "type": "contractor"
+    },
+    {
+      "id": 141,
+      "name": "Olivia Santos",
+      "position": "Engineer",
+      "salary": 5129,
+      "type": "fulltime"
+    },
+    {
+      "id": 142,
+      "name": "Karen Barbosa",
+      "position": "Architect",
+      "salary": 11561,
+      "type": "fulltime"
+    },
+    {
+      "id": 143,
+      "name": "Nicolas Dias",
+      "position": "Designer",
+      "salary": 6174,
+      "type": "contractor"
+    },
+    {
+      "id": 144,
+      "name": "Quintana Barbosa",
+      "position": "Engineer",
+      "salary": 5966,
+      "type": "contractor"
+    },
+    {
+      "id": 145,
+      "name": "Quintana Nunes",
+      "position": "DevOps",
+      "salary": 10139,
+      "type": "fulltime"
+    },
+    {
+      "id": 146,
+      "name": "Felipe Alves",
+      "position": "DevOps",
+      "salary": 7853,
+      "type": "fulltime"
+    },
+    {
+      "id": 147,
+      "name": "Diego Ferreira",
+      "position": "Product Manager",
+      "salary": 13257,
+      "type": "contractor"
+    },
+    {
+      "id": 148,
+      "name": "Ana Gomes",
+      "position": "DevOps",
+      "salary": 5505,
+      "type": "fulltime"
+    },
+    {
+      "id": 149,
+      "name": "João Moreira",
+      "position": "Analyst",
+      "salary": 7610,
+      "type": "fulltime"
+    },
+    {
+      "id": 150,
+      "name": "Felipe Carvalho",
+      "position": "DevOps",
+      "salary": 7133,
+      "type": "fulltime"
+    },
+    {
+      "id": 151,
+      "name": "Diego Moreira",
+      "position": "QA",
+      "salary": 10215,
+      "type": "contractor"
+    },
+    {
+      "id": 152,
+      "name": "Lucas Gomes",
+      "position": "Tech Lead",
+      "salary": 7049,
+      "type": "contractor"
+    },
+    {
+      "id": 153,
+      "name": "Thiago Lima",
+      "position": "QA",
+      "salary": 11524,
+      "type": "fulltime"
+    },
+    {
+      "id": 154,
+      "name": "Thiago Nunes",
+      "position": "Engineer",
+      "salary": 7862,
+      "type": "contractor"
+    },
+    {
+      "id": 155,
+      "name": "Nicolas Martins",
+      "position": "Product Manager",
+      "salary": 7835,
+      "type": "fulltime"
+    },
+    {
+      "id": 156,
+      "name": "Quintana Dias",
+      "position": "Architect",
+      "salary": 3183,
+      "type": "contractor"
+    },
+    {
+      "id": 157,
+      "name": "Thiago Rocha",
+      "position": "Tech Lead",
+      "salary": 11233,
+      "type": "fulltime"
+    },
+    {
+      "id": 158,
+      "name": "João Costa",
+      "position": "Designer",
+      "salary": 3186,
+      "type": "fulltime"
+    },
+    {
+      "id": 159,
+      "name": "Mariana Moreira",
+      "position": "Architect",
+      "salary": 7007,
+      "type": "fulltime"
+    },
+    {
+      "id": 160,
+      "name": "Lucas Alves",
+      "position": "Analyst",
+      "salary": 6798,
+      "type": "fulltime"
+    },
+    {
+      "id": 161,
+      "name": "Lucas Andrade",
+      "position": "Data Scientist",
+      "salary": 10810,
+      "type": "fulltime"
+    },
+    {
+      "id": 162,
+      "name": "Felipe Lima",
+      "position": "Data Scientist",
+      "salary": 11507,
+      "type": "fulltime"
+    },
+    {
+      "id": 163,
+      "name": "Nicolas Nunes",
+      "position": "Data Scientist",
+      "salary": 8585,
+      "type": "contractor"
+    },
+    {
+      "id": 164,
+      "name": "Bruno Andrade",
+      "position": "Data Scientist",
+      "salary": 10280,
+      "type": "contractor"
+    },
+    {
+      "id": 165,
+      "name": "Isabela Rodrigues",
+      "position": "Data Scientist",
+      "salary": 8384,
+      "type": "fulltime"
+    },
+    {
+      "id": 166,
+      "name": "Hugo Santos",
+      "position": "Engineer",
+      "salary": 8783,
+      "type": "fulltime"
+    },
+    {
+      "id": 167,
+      "name": "Karen Santos",
+      "position": "Designer",
+      "salary": 6941,
+      "type": "fulltime"
+    },
+    {
+      "id": 168,
+      "name": "Felipe Barbosa",
+      "position": "Tech Lead",
+      "salary": 12208,
+      "type": "fulltime"
+    },
+    {
+      "id": 169,
+      "name": "Rafael Ferreira",
+      "position": "Data Scientist",
+      "salary": 9984,
+      "type": "contractor"
+    },
+    {
+      "id": 170,
+      "name": "Diego Barbosa",
+      "position": "Architect",
+      "salary": 7000,
+      "type": "contractor"
+    },
+    {
+      "id": 171,
+      "name": "Mariana Andrade",
+      "position": "Data Scientist",
+      "salary": 8702,
+      "type": "contractor"
+    },
+    {
+      "id": 172,
+      "name": "Gabriela Moreira",
+      "position": "Tech Lead",
+      "salary": 8261,
+      "type": "contractor"
+    },
+    {
+      "id": 173,
+      "name": "Pedro Rocha",
+      "position": "Tech Lead",
+      "salary": 5162,
+      "type": "fulltime"
+    },
+    {
+      "id": 174,
+      "name": "Bruno Souza",
+      "position": "Data Scientist",
+      "salary": 3437,
+      "type": "contractor"
+    },
+    {
+      "id": 175,
+      "name": "Elena Rodrigues",
+      "position": "DevOps",
+      "salary": 12279,
+      "type": "fulltime"
+    },
+    {
+      "id": 176,
+      "name": "Quintana Nascimento",
+      "position": "Engineer",
+      "salary": 11843,
+      "type": "fulltime"
+    },
+    {
+      "id": 177,
+      "name": "Rafael Ferreira",
+      "position": "Product Manager",
+      "salary": 3971,
+      "type": "fulltime"
+    },
+    {
+      "id": 178,
+      "name": "Olivia Alves",
+      "position": "DevOps",
+      "salary": 3336,
+      "type": "fulltime"
+    },
+    {
+      "id": 179,
+      "name": "Elena Carvalho",
+      "position": "QA",
+      "salary": 10371,
+      "type": "fulltime"
+    },
+    {
+      "id": 180,
+      "name": "Hugo Rocha",
+      "position": "Tech Lead",
+      "salary": 9546,
+      "type": "fulltime"
+    },
+    {
+      "id": 181,
+      "name": "Karen Moreira",
+      "position": "DevOps",
+      "salary": 14836,
+      "type": "fulltime"
+    },
+    {
+      "id": 182,
+      "name": "Pedro Lima",
+      "position": "Architect",
+      "salary": 6708,
+      "type": "fulltime"
+    },
+    {
+      "id": 183,
+      "name": "Nicolas Martins",
+      "position": "DevOps",
+      "salary": 9052,
+      "type": "contractor"
+    },
+    {
+      "id": 184,
+      "name": "Diego Souza",
+      "position": "Designer",
+      "salary": 7990,
+      "type": "fulltime"
+    },
+    {
+      "id": 185,
+      "name": "Isabela Pereira",
+      "position": "Engineer",
+      "salary": 11092,
+      "type": "fulltime"
+    },
+    {
+      "id": 186,
+      "name": "Mariana Ferreira",
+      "position": "Manager",
+      "salary": 9745,
+      "type": "fulltime"
+    },
+    {
+      "id": 187,
+      "name": "Gabriela Andrade",
+      "position": "Data Scientist",
+      "salary": 13713,
+      "type": "fulltime"
+    },
+    {
+      "id": 188,
+      "name": "Diego Costa",
+      "position": "Analyst",
+      "salary": 7381,
+      "type": "fulltime"
+    },
+    {
+      "id": 189,
+      "name": "Carla Costa",
+      "position": "QA",
+      "salary": 10871,
+      "type": "fulltime"
+    },
+    {
+      "id": 190,
+      "name": "Ana Ferreira",
+      "position": "Tech Lead",
+      "salary": 11982,
+      "type": "fulltime"
+    },
+    {
+      "id": 191,
+      "name": "Carla Alves",
+      "position": "Analyst",
+      "salary": 3272,
+      "type": "fulltime"
+    },
+    {
+      "id": 192,
+      "name": "Nicolas Lima",
+      "position": "Tech Lead",
+      "salary": 10176,
+      "type": "contractor"
+    },
+    {
+      "id": 193,
+      "name": "Diego Nunes",
+      "position": "Architect",
+      "salary": 3533,
+      "type": "contractor"
+    },
+    {
+      "id": 194,
+      "name": "Pedro Moreira",
+      "position": "Tech Lead",
+      "salary": 8385,
+      "type": "fulltime"
+    },
+    {
+      "id": 195,
+      "name": "Hugo Nascimento",
+      "position": "Analyst",
+      "salary": 12748,
+      "type": "fulltime"
+    },
+    {
+      "id": 196,
+      "name": "Mariana Lima",
+      "position": "Product Manager",
+      "salary": 6337,
+      "type": "contractor"
+    },
+    {
+      "id": 197,
+      "name": "Elena Nunes",
+      "position": "Designer",
+      "salary": 14703,
+      "type": "fulltime"
+    },
+    {
+      "id": 198,
+      "name": "Karen Carvalho",
+      "position": "Architect",
+      "salary": 5179,
+      "type": "fulltime"
+    },
+    {
+      "id": 199,
+      "name": "Hugo Rocha",
+      "position": "Product Manager",
+      "salary": 12223,
+      "type": "fulltime"
+    },
+    {
+      "id": 200,
+      "name": "Rafael Costa",
+      "position": "Data Scientist",
+      "salary": 9929,
+      "type": "fulltime"
+    },
+    {
+      "id": 201,
+      "name": "Nicolas Martins",
+      "position": "Analyst",
+      "salary": 3864,
+      "type": "contractor"
+    },
+    {
+      "id": 202,
+      "name": "Elena Barbosa",
+      "position": "Manager",
+      "salary": 3738,
+      "type": "fulltime"
+    },
+    {
+      "id": 203,
+      "name": "Carla Rodrigues",
+      "position": "Tech Lead",
+      "salary": 8636,
+      "type": "fulltime"
+    }
+  ]
+}

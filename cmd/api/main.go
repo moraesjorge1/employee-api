@@ -66,6 +66,8 @@ func main() {
 	router.HandleFunc("/employees/{id}", empHandler.Delete).Methods("DELETE")
 
 	router.HandleFunc("/employees/report", reportHandler.StartReport).Methods("POST")
+	router.HandleFunc("/employees/report/{report_id}/status", reportHandler.GetStatus).Methods("GET")
+	router.HandleFunc("/employees/report/{report_id}/download", reportHandler.Download).Methods("GET")
 	router.HandleFunc("/employees/report/{report_id}", reportHandler.GetReport).Methods("GET")
 
 	fmt.Println("Server running on port 8080!")

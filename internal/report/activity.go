@@ -10,7 +10,7 @@ import (
 	"github.com/jorgemorais/employee-api/internal/employee"
 )
 
-const reportsDir = "reports"
+var reportsDir = "reports"
 
 type Activities struct {
 	svc *employee.Service

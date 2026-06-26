@@ -1,0 +1,32 @@
+{
+  "total_employees": 3,
+  "total_salary": 22800,
+  "average_salary": 7600,
+  "by_type": {
+    "contractor": 1,
+    "fulltime": 2
+  },
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ana Souza",
+      "position": "Engineer",
+      "salary": 8500,
+      "type": "fulltime"
+    },
+    {
+      "id": 2,
+      "name": "Bruno Lima",
+      "position": "Designer",
+      "salary": 5200,
+      "type": "contractor"
+    },
+    {
+      "id": 3,
+      "name": "Carla Mendes",
+      "position": "Engineer",
+      "salary": 9100,
+      "type": "fulltime"
+    }
+  ]
+}

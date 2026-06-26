@@ -1,0 +1,24 @@
+{
+  "total_employees": 2,
+  "total_salary": 17600,
+  "average_salary": 8800,
+  "by_type": {
+    "fulltime": 2
+  },
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ana Souza",
+      "position": "Engineer",
+      "salary": 8500,
+      "type": "fulltime"
+    },
+    {
+      "id": 3,
+      "name": "Carla Mendes",
+      "position": "Engineer",
+      "salary": 9100,
+      "type": "fulltime"
+    }
+  ]
+}
