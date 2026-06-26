@@ -26,19 +26,21 @@ dev-local:
 
 seed:
 	@echo "Inserindo 400 registros..."
-	@NAMES="Ana Bruno Carla Diego Elena Felipe Gabriela Hugo Isabela João Karen Lucas Mariana Nicolas Olivia Pedro Rafael Sofia Thiago Camila"; \
-	SURNAMES="Silva Santos Oliveira Souza Lima Pereira Costa Ferreira Alves Rodrigues Martins Gomes Barbosa Carvalho Rocha Dias Nascimento Andrade Moreira Nunes"; \
-	POSITIONS="Engineer Designer Manager Analyst DevOps QA 'Product Manager' 'Data Scientist' Architect 'Tech Lead'"; \
-	TYPES="fulltime contractor"; \
+	@bash -c '\
+	NAMES=(Ana Bruno Carla Diego Elena Felipe Gabriela Hugo Isabela Joao Karen Lucas Mariana Nicolas Olivia Pedro Rafael Sofia Thiago Camila); \
+	SURNAMES=(Silva Santos Oliveira Souza Lima Pereira Costa Ferreira Alves Rodrigues Martins Gomes Barbosa Carvalho Rocha Dias Nascimento Andrade Moreira Nunes); \
+	POSITIONS=(Engineer Designer Manager Analyst DevOps QA Architect); \
+	TYPES=(fulltime contractor); \
 	for i in $$(seq 1 400); do \
-		NAME=$$(echo $$NAMES | tr ' ' '\n' | shuf -n1)' '$$( echo $$SURNAMES | tr ' ' '\n' | shuf -n1); \
-		POSITION=$$(echo "Engineer Designer Manager Analyst DevOps QA Architect" | tr ' ' '\n' | shuf -n1); \
-		TYPE=$$(echo "fulltime contractor" | tr ' ' '\n' | shuf -n1); \
-		SALARY=$$(( 3000 + RANDOM % 12000 )); \
+		NAME="$${NAMES[$$((RANDOM % $${#NAMES[@]}))]}_$${SURNAMES[$$((RANDOM % $${#SURNAMES[@]}))]}"; \
+		NAME=$${NAME//_/ }; \
+		POSITION=$${POSITIONS[$$((RANDOM % $${#POSITIONS[@]}))]}; \
+		TYPE=$${TYPES[$$((RANDOM % $${#TYPES[@]}))]}; \
+		SALARY=$$((3000 + RANDOM % 12000)); \
 		curl -s -X POST http://localhost:8080/employees \
 			-H "Content-Type: application/json" \
 			-d "{\"name\":\"$$NAME\",\"position\":\"$$POSITION\",\"salary\":$$SALARY,\"type\":\"$$TYPE\"}" > /dev/null; \
-	done
+	done'
 	@echo "400 registros inseridos!"
 
 dev: infra
